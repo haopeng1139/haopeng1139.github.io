@@ -1,0 +1,54 @@
+body {
+  margin: 15px;
+  max-width: 1410px;
+  transition: all 500ms;
+  padding-bottom: 20px;
+}
+
+h1, p {font-family: Quicksand;}
+
+h1 {font-size: 1.7em;}
+
+p {
+  font-size: 1.2em;
+  line-height: 130%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#color-mode {
+  width: 24px;
+  height: auto;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+#color-mode:active {opacity: 0.5;}
+
+@media (min-width: 640px) {
+  h1 {font-size: 2em;}
+}
+
+@media (min-width: 640px) and (max-width: 959px) {
+  p {font-size: 1.4em;}
+}
+
+@media (min-width: 960px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  img, article {width: 49%;}
+}
+
+@media (min-width: 1440px) {
+  body {margin: auto;}
+  p {font-size: 1.4em;}
+}
